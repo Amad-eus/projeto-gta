@@ -28,14 +28,5 @@ const elementoPlataformas = document.querySelector(".btn-plataforma .plataformas
 botao.addEventListener("click", () => {
 //Objetivo 2 - caso a lista de botões de plataformas já esteja aparecendo e o usuário clicar em cima do botão, o conteúdo deve ser escondido
     //Passo 1 - verificar se o botão já esta aberto, se sim, devemos remover a classe ativo pra que ele esconda o conteúdo novamente
-    if(elementoPlataformas.classList.contains("ativo")) {
-        elementoPlataformas.classList.remove("ativo");
-    } else {
-        //Passo 4 - quando o usuário clicar, adicionar a classe ativo na listagem de plataformas dentro do botão pra que o conteúdo apareça
-        elementoPlataformas.classList.add("ativo")
-    }
-
-    /* ou, mais facil:
-        elementoPlataformas.classList.toggle("ativo");
-    */
+    elementoPlataformas.classList.toggle("ativo");
 })
